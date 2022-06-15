@@ -32,6 +32,19 @@ public class Aritmetica
         return porcentagem;
     }
 
+    public static double Bhaskara(double a , double b, double c, double delta, double x1, double x2)
+    {
+        delta = Math.Pow(b,2) -4 * a *c;
+         x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+         return delta;
+    }
+
+    public static double Exponenciação(double numero, double expoente)
+    {
+        expoente = Math.Pow(numero,2);
+        return numero;
+    }
 
 
 }

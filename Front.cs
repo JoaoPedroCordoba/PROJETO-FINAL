@@ -6,9 +6,12 @@ Console.WriteLine("--- Calculadora 4 operações ---\n");
 
 Console.WriteLine("[+] Soma");
 Console.WriteLine("[-] Subtração");
-Console.WriteLine("[*] Multiplicação");
+Console.WriteLine("[x] Multiplicação");
 Console.WriteLine("[/] Divisão");
 Console.WriteLine("[%] Porcentagem");
+Console.WriteLine("[b] Bhaskara");
+Console.WriteLine("[*] Esponenciação");
+Console.WriteLine("[r] Radiciação");
 
 Console.Write("\nSelecione a operação desejada: ");
 
@@ -22,7 +25,7 @@ switch (opcaoDesejada)
     case "-":
         Codigo.CalcularSubtracao();
         break;
-    case "*":
+    case "x":
         Codigo.CalcularMultiplicacao();
         break;
     case "/":
@@ -30,6 +33,12 @@ switch (opcaoDesejada)
         break;
      case "%":
         Codigo.CalcularPorcentagem();
+        break;
+    case "b":
+        Codigo.CalcularBhaskara();
+        break;
+    case "*":
+        Codigo.CalcularExponenciação();
         break;
     default:
         Console.WriteLine("Opção inválida.");
