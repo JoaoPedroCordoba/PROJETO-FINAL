@@ -155,7 +155,7 @@ else
 
 public static void CalcularExponenciação()
 {
-double numero,  expoente;
+double numero,  potencia;
 
  Console.WriteLine("--- Exponenciação A²---\n");
     Console.WriteLine("Digite os valores.");
@@ -163,9 +163,9 @@ double numero,  expoente;
 Console.Write("(a):");
 numero = Convert.ToDouble(Console.ReadLine());
 
-expoente = Math.Pow(numero,2);
+potencia = Math.Pow(numero,2);
 
-Console.WriteLine($"{numero} ao quadrado é:{expoente}");
+Console.WriteLine($"{numero} ao quadrado é:{potencia}");
 
 Console.WriteLine("\nPressione uma tecla para continuar...");
     Console.ReadKey();

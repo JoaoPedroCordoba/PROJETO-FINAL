@@ -40,9 +40,9 @@ public class Aritmetica
          return delta;
     }
 
-    public static double Exponenciação(double numero, double expoente)
+    public static double Exponenciação(double numero, double potencia)
     {
-        expoente = Math.Pow(numero,2);
+        potencia = Math.Pow(numero,2);
         return numero;
     }
 
