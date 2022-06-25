@@ -2,16 +2,19 @@
 
 Console.Clear();
 
-Console.WriteLine("--- Calculadora 4 operações ---\n");
-
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("--- Calculadora 8 operações ---\n");
+Console.ResetColor();
 Console.WriteLine("[+] Soma");
 Console.WriteLine("[-] Subtração");
-Console.WriteLine("[x] Multiplicação");
+Console.WriteLine("[*] Multiplicação");
 Console.WriteLine("[/] Divisão");
 Console.WriteLine("[%] Porcentagem");
 Console.WriteLine("[b] Bhaskara");
-Console.WriteLine("[*] Esponenciação");
+Console.WriteLine("[e] Esponenciação");
 Console.WriteLine("[r] Radiciação");
+Console.WriteLine("[s] Sair");
+
 
 Console.Write("\nSelecione a operação desejada: ");
 
@@ -25,7 +28,7 @@ switch (opcaoDesejada)
     case "-":
         Codigo.CalcularSubtracao();
         break;
-    case "x":
+    case "*":
         Codigo.CalcularMultiplicacao();
         break;
     case "/":
@@ -37,8 +40,13 @@ switch (opcaoDesejada)
     case "b":
         Codigo.CalcularBhaskara();
         break;
-    case "*":
+    case "e":
         Codigo.CalcularExponenciação();
+        break;
+    case "r":
+        Codigo.CalcularRadiciação();
+        break;
+    case"s":
         break;
     default:
         Console.WriteLine("Opção inválida.");
@@ -46,4 +54,11 @@ switch (opcaoDesejada)
     
 }
 
-Console.WriteLine("\nObrigado por utilizar nosso programa.");
+Console.Clear();
+
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("\nObrigado por utilizar meu programa.");
+Console.WriteLine("\nNome: João Pedro ");
+Console.WriteLine("\nGitHub: JoaoPedroCordoba\n");
+Console.ResetColor();
